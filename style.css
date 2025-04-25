@@ -1,0 +1,779 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.sec1{
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    height: 100px;
+    border-radius: 10px;
+    position: fixed;
+    
+    
+}
+.sec1 .navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding: 10px 0px;
+   
+    
+   
+}
+.sec1 .navbar .logo img{
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sec1 .navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    transition: anima .3s ;
+    padding-top: 5px;
+}
+.sec1 .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition:  .3s ;
+   
+}
+.sec1 .navbar ul li{
+    display: flex;
+}
+.sec1 .navbar ul li a:hover {
+color:blue;
+border-bottom: 1px solid blue;
+transform:translateY(-8px);
+
+
+}
+    
+    /*
+@keyframe anima {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}*/
+
+/*home */
+#home{
+   
+    
+}
+#home .container1{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+#home .container1 .content1{
+  padding-top: 150px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+#home .container1 .content1 p{
+    width: 350px;
+   
+}
+#home .container1 .content1 h1{
+    padding: 10px 0px;
+    border-bottom: 1px solid blue;
+    transition: .3s ease-in-out;
+}
+#home .container1 .content1 h1:hover{
+    transform: scale(1.2);
+}
+#home .container1 .content1 h3{
+    padding: 10px 0px;
+    transition: .3s ease-in-out;
+    
+}
+#home .container1 .content1 h3:hover{
+    transform: translateX(-15px);
+
+}
+#home .container1 .content1 div {
+padding-top: 40px;
+display: flex;
+}
+#home .container1 .content1 div a{
+    display: flex;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid blue;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    gap: 30px;
+    transition: .3s ease-in-out;
+}
+#home .container1 .content1 div a i{
+color: black;
+padding: 8px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+#home .container1 .content1 div a:hover{
+    background-color: blue;
+    color: white;
+    transform: translateY(-12px);
+    box-shadow: 1px 3px 15px blue, -1px -3px 15px;
+}
+#home .container1 .content2 {
+    display: flex;
+    padding-top: 15px;
+}
+#home .container1 .content2 img{
+    width: 400px;
+  
+}
+/*   about    */
+#about {
+    display: flex;
+    height: 190vh;
+    text-align: center;
+align-items: center;
+justify-content: center;
+padding-top: 8px;
+background-color: rgba(128, 128, 128, 0.445);
+border-radius: 10px;
+
+}
+#about .container2{
+    
+    display: flex;
+    flex-direction: column;
+}
+#about .container2 .element1{
+   padding-top: 40px;
+   display: flex;
+   flex-direction: column;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+  
+  
+}
+#about .container2 .element1 h2{
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+}
+#about .container2 .element1 h4{
+    padding: 10px 0px ;
+}
+#about .container2 .element1 i{
+    padding: 10px 0px;
+    font-size: 19px;
+    color: white;
+
+}
+#about .container2 .element1 a{
+   background-color: blue;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin: 15px 0px;
+   text-decoration: none;
+   transition: .3s ease-in-out;
+
+}
+#about .container2 .element1 a:hover{
+    transform: translateY(12px);
+}
+#about .container2 .element2 .list1{
+   
+   
+}
+#about .container2 .element2 .list1 button{
+padding: 15px;
+border-radius: 10px;
+margin: 0px 3px;
+margin-top: 6px;
+transition: .3s ease-in-out;
+color: black;
+font-weight: bold;
+
+}
+#about .container2 .element2 .list1 button:hover{
+    background-color: blue;
+    transform: scale(1.2);
+    cursor: progress;
+}
+.list2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 30px;
+
+}
+.list2 img{
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 50%;
+}
+.list2 .menu-item{
+    margin: 10px 0px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.411);
+    transition: .3s ease-in-out;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+.list2 .menu-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.menu-item h2{
+    padding: 10px 0px;
+}
+.menu-item p{
+    font-weight: bold;
+}
+.menu-item p span{
+    color:rgb(27, 13, 13);
+    padding-left: 10px;
+    font-size: 22px;
+  }
+  
+  /*  burgers */
+  .burgers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120vh;
+    }
+     
+    
+    .burgers .list-box  img{
+    width: 480px;
+    height: 300px;
+    object-fit: cover;
+     border-radius: 10px;
+    position: relative;
+    }
+    .burgers .list-box  img:hover{
+        border-radius: 10px;
+      
+    }
+  
+    .burgers .container4 .box-container4 .list-box {
+        position: relative;
+      border-radius: 10px;
+    
+       border-radius: 10px;
+        transition: .3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    
+    }
+     
+    .burgers .container4 .box-container4 .list-box:hover{
+      border-radius: 10px;
+    }
+    .burgers.container4 .box-container4 .list-box div h2{
+       color: white;
+    }
+    
+    .burgers .container4 .box-container4 .list-box div{
+      position: absolute;
+      display: flex;
+     flex-direction: column;
+     margin: 40px 15px;
+     top: 190px;
+     padding: 20px;
+      color: black;
+    }
+     
+    .burgers .container4 .box-container4 .list-box div button{
+      border-radius: 10px;
+      transition: .3s;
+      font-weight: bold;
+    }
+     
+    
+    .burgers .container4 .box-container4 .list-box div button:hover{
+        background-color: red;
+        transform: translatex(-12px);
+        box-shadow: 3px 5px 15px red , -3px -5px 15px ;
+        cursor: progress;
+    }
+    .burgers h1{
+        color: grey;
+        margin-bottom: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+.swiper-pagination{
+  margin-bottom: 230px;
+}
+.container4{
+    overflow: hidden;
+    max-width: 1200px;}
+
+
+    /*client  */
+
+
+
+
+#client{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#client .text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    margin: 0px auto;
+}
+#client .container5-box img{
+width: 200px;
+height:200px ;
+object-fit: cover;
+border-radius: 50%;
+display: flex;
+
+text-align: center;
+align-items: center;
+justify-content: center;
+
+border: 1px solid black;
+
+box-shadow: 1px 3px 15px blueviolet, -1px -3px 15px;
+
+}
+#client .container5-box div{
+    display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin: 0px auto;
+display: flex;
+}
+#client .container5-box{
+   position: relative;
+   border: 1px solid black;
+   border-radius: 10px;
+   width: 400px;
+   margin: 0px auto;
+   height: 300px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   margin: 15px 0px;
+   box-shadow: 1px 3px 15px blueviolet, -1px -3px 15px;
+   
+   
+
+}
+#client .container5-box .star{
+   flex-direction: row;
+   padding-left: 60px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin: 0px auto;
+   padding-right: 60px;
+   padding: 10px 0px;
+    
+}
+#client .container5-box a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#client .container5-box .names{
+
+    display: flex;
+
+}
+#client .container5-box .star a i{
+    color: blueviolet;
+}
+
+/*contact */
+
+
+#contact h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+#contact{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#contact .container6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+#contact .box1-container6{
+ 
+ width: 400px;
+ height: 200px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+
+
+}
+#contact .box1-container6 input{
+    padding: 15px;
+    border-radius: 3px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: .3s ease-in-out;
+   
+}
+#contact .box1-container6 input:hover{
+    box-shadow: 1px 3px 15px blueviolet, -1px -3px 15px;
+    transform: translateX(-12px);
+}
+#contact .box1-container6 .input1{
+  padding: 60px 0px;
+  display: flex;
+}
+#contact .box2-container6 img{
+    width: 300px;
+    margin-top: 170px;
+    height: 400px;
+    object-fit: cover;
+    transition:.3s ease-in-out ;
+    border-radius: 20px;
+
+}
+#contact .box2-container6 img:hover{
+    transform: translateX(-12px);
+  
+}
+#contact .box2-container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* responsives */
+/*  phone */
+@media (max-width:350px){
+    #home .container1 .content1 p{
+        width: 320px;
+       
+    }
+    .sec1 .navbar ul{
+        display: flex;
+        gap: 18px;
+        list-style: none;
+        transition: anima .3s ;
+        padding-top: 5px;
+    }
+    #home .container1{
+        height: 180vh;
+    }
+    #about .container2 .element2 .list1 button{
+
+        padding: 10px;
+    }
+    #home .container1 .content2 img{
+        width: 350px;
+      
+    }
+    .list2 img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        }
+        .list2 .menu-item{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            margin: 10px 10px;
+        }
+        .menu-item p{
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .menu-item h2{
+            padding: 10px 0px;
+            font-size: 17px;
+        }
+        .menu-item p span{
+            color:rgb(27, 13, 13);
+            padding-left: 10px;
+            font-size: 20px;
+          }
+          #about{
+            height: 210vh;
+          }
+          .burgers .list-box  img{
+            width: 280px;
+            height: 300px;
+            object-fit: cover;
+             border-radius: 10px;
+            position: relative;
+            border: 1px solid black;
+           
+            }
+            .burgers .list-box  img:hover{ transform: scale(1.1);
+                transition: .3s ease-in-out;
+
+            }
+            
+            .move{
+                display: none;
+            }
+            .swiper-pagination{
+                margin-bottom: 110px;
+              }
+            
+             #burgers {
+                height: 150vh;
+             }
+             #client .container5-box img{
+                width: 150px;
+                height:150px ;
+                object-fit: cover;
+                border-radius: 50%;
+                display: flex;
+                
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                
+                border: 1px solid black;
+                
+                box-shadow: 1px 3px 15px blueviolet, -1px -3px 15px;
+                
+                }
+                #client .container5-box{
+                    position: relative;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 300px;
+                    margin: 0px auto;
+                    height: 270px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 15px 0px;
+                    box-shadow: 1px 3px 15px blueviolet, -1px -3px 15px;
+                    
+                 }
+                 #contact .box1-container6{
+ 
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                   
+                   
+                   }
+                   #contact{
+                    height:180vh ;
+                   }
+           
+
+}
+
+/* responsive 2  */
+ /*telephone 400px*/
+ @media (max-width:450px){
+    #home .container1 .content1 p{
+        width: 320px;
+       
+    }
+    .sec1 .navbar ul{
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        transition: anima .3s ;
+        padding-top: 5px;
+    }
+    #home .container1{
+        height: 110vh;
+    }
+    #about .container2 .element2 .list1 button{
+
+        padding: 13px;
+    }
+    #home .container1 .content2 img{
+        width: 360px;
+      
+    }
+    .list2 img{
+        width: 85px;
+        height: 85px;
+        object-fit: cover;
+        border-radius: 50%;
+        }
+        .list2 .menu-item{
+            width: 160px;
+            height: 160px;
+            display: flex;
+            margin: 10px 10px;
+        }
+        .menu-item p{
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .menu-item h2{
+            padding: 10px 0px;
+            font-size: 18px;
+        }
+        .menu-item p span{
+            color:rgb(27, 13, 13);
+            padding-left: 10px;
+            font-size: 20px;
+          }
+          #about{
+            height: 150vh;
+          }
+          .burgers .list-box  img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+             border-radius: 10px;
+            position: relative;
+            border: 1px solid black;
+           
+            }
+            .burgers .list-box  img:hover{ transform: scale(1.1);
+                transition: .3s ease-in-out;
+
+            }
+            
+            .move{
+                display: none;
+            }
+            .swiper-pagination{
+                margin-bottom: 510px;
+              }
+            
+             #burgers {
+                height: 70vh;
+             }
+             #client .container5-box img{
+                width: 160px;
+                height:160px ;
+                object-fit: cover;
+                border-radius: 50%;
+                display: flex;
+                
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                
+                border: 1px solid black;
+                
+                box-shadow: 1px 3px 15px blueviolet, -1px -3px 15px;
+                
+                }
+                #client .container5-box{
+                    position: relative;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 350px;
+                    margin: 0px auto;
+                    height: 270px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 15px 0px;
+                    box-shadow: 1px 3px 15px blueviolet, -1px -3px 15px;
+                    
+                 }
+                 #contact .box1-container6{
+ 
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                   
+                   
+                   }
+                   #contact{
+                    height:90vh ;
+                   }
+           
+}
+
+
+
+
+
+
+
+
+
+
+
+
